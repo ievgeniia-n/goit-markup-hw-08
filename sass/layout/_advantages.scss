@@ -19,9 +19,20 @@
 	}
 }
 .advantages-list {
-	display: flex;
-	flex-wrap: wrap;
+	/* 	display: flex;
+	flex-wrap: wrap; */
 
+	display: block;
+
+	@include for-size(desktop) {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	@include for-size(tablet-landscape) {
+		display: flex;
+		flex-wrap: wrap;
+	}
 	& p {
 		margin-top: 0;
 		margin-bottom: 0;
@@ -34,11 +45,20 @@
 }
 
 .advantages-list-item {
-	width: 270px;
+	max-width: 450px;
+	margin-right: 0;
 
-	&:not(:last-child) {
-		margin-right: 30px;
+	@include for-size(desktop) {
+		max-width: 270px;
+
+		&:not(:last-child) {
+			margin-right: 30px;
+		}
 	}
+
+	/* 	&:not(:last-child) {
+		margin-right: 30px;
+	} */
 
 	&:before {
 		margin-bottom: 30px;
