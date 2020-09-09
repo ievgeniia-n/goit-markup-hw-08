@@ -1,13 +1,19 @@
 .features {
 	display: flex;
-	flex-wrap: wrap;
+	/* flex-wrap: wrap; */
 
 	.features-item:not(:last-child) {
 		margin-right: 30px;
+		width: calc((100%-60px) / 3);
+	}
+
+	@media (max-width: 1199px) {
+		display: none;
 	}
 }
 
 .features-box {
+	width: 100%;
 	position: relative;
 }
 

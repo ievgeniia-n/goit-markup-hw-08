@@ -118,6 +118,12 @@ ul {
   background-color: #f5f4fa;
 }
 
+@media screen and (max-width: 1199px) {
+  .section {
+    padding-top: 60px;
+  }
+}
+
 .section-title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -799,7 +805,7 @@ ul {
 }
 
 .advantages-list-item {
-  max-width: 100%;
+  max-width: 450px;
   margin-right: 0;
 }
 
@@ -854,15 +860,22 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .features .features-item:not(:last-child) {
   margin-right: 30px;
+  width: calc((100%-60px) / 3);
+}
+
+@media (max-width: 1199px) {
+  .features {
+    display: none;
+  }
 }
 
 .features-box {
+  width: 100%;
   position: relative;
 }
 
@@ -886,25 +899,6 @@ ul {
   color: #ffffff;
 }
 
-.team-item {
-  width: 270px;
-  padding-bottom: 30px;
-  background-color: #ffffff;
-  border-radius: 0px 0px 4px 4px;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.team-item:before {
-  margin-bottom: 30px;
-  content: "";
-  display: block;
-  height: 260px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .team-member {
   margin-top: 0;
   margin-bottom: 10px;
@@ -917,28 +911,53 @@ ul {
   color: #212121;
 }
 
-.member {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+@media (min-width: 768px) {
+  .member {
+    margin: -15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1200px) {
+  .member {
+    margin: -15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .member-title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  /* margin-bottom: 50px; */
   font-family: Roboto, sans-serif;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
+  /* 	font-size: 36px;
+		line-height: 1.16; */
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
 }
 
-.member-description {
+@media (min-width: 1200px) {
+  .member-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}
+
+.member-title-description {
+  text-align: center;
   margin-top: 0;
   margin-bottom: 16px;
   font-size: 16px;
@@ -948,19 +967,58 @@ ul {
   color: #757575;
 }
 
-.designer::before {
-  background-image: url(../images/product-designer.jpg);
+.team-item {
+  max-width: 100%;
+  padding-bottom: 30px;
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.developer::before {
+@media (min-width: 768px) {
+  .team-item {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team-item {
+    width: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .team-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.team-item:not(:last-child):before {
+  margin-bottom: 30px;
+  content: "";
+  display: block;
+  height: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.team-item .designer::before {
+  background-image: url(/images/product-designer.jpg);
+}
+
+.team-item .developer::before {
   background-image: url(/images/frontend-developer.jpg);
 }
 
-.marketing::before {
+.team-item .marketing::before {
   background-image: url(/images/marketing.jpg);
 }
 
-.uidesigner::before {
+.team-item .uidesigner::before {
   background-image: url(/images/ui-designer.jpg);
 }
 

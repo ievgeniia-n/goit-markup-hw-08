@@ -17,13 +17,13 @@
 
 .main-nav {
 	padding-top: 24px;
-	display: flex;
-	align-items: center;
+	/* 	display: flex;
+	align-items: center; */
 }
 
 .auth-nav {
-	display: flex;
-	margin-left: auto;
+	/* 	display: flex;
+	margin-left: auto; */
 
 	.link {
 		font-family: Roboto, sans-serif;
@@ -44,7 +44,7 @@
 		}
 	}
 	.item {
-		display: flex;
+		/* 		display: flex; */
 		justify-content: center;
 		align-items: center;
 
@@ -56,7 +56,7 @@
 }
 
 .site-nav {
-	display: flex;
+	/* 	display: flex; */
 	margin-left: 85px;
 
 	.link {

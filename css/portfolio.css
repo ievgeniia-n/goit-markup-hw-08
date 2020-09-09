@@ -118,6 +118,12 @@ ul {
   background-color: #f5f4fa;
 }
 
+@media screen and (max-width: 1199px) {
+  .section {
+    padding-top: 60px;
+  }
+}
+
 .section-title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -351,19 +357,13 @@ ul {
 
 .main-nav {
   padding-top: 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  /* 	display: flex;
+	align-items: center; */
 }
 
 .auth-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
+  /* 	display: flex;
+	margin-left: auto; */
 }
 
 .auth-nav .link {
@@ -389,9 +389,7 @@ ul {
 }
 
 .auth-nav .item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /* 		display: flex; */
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -408,9 +406,7 @@ ul {
 }
 
 .site-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /* 	display: flex; */
   margin-left: 85px;
 }
 
@@ -478,7 +474,7 @@ ul {
   font-weight: 900;
   font-size: 26px;
   line-height: 1.61;
-  /* font-size: 44px;
+  /*  font-size: 44px;
 		line-height: 1.4; */
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -587,60 +583,53 @@ ul {
 }
 
 .footer {
-  width: 100%;
+  padding-bottom: 60px;
   background-color: #2f303a;
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    padding-top: 94px;
+  }
 }
 
 .footer .order-link {
   min-width: 200px;
 }
 
-.text-footer {
-  margin-top: 0;
-  margin-bottom: 20px;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
+@media screen and (max-width: 1199px) {
+  .container-footer {
+    padding-top: 60px;
+  }
 }
 
-.container-footer {
-  width: 1230px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media sreen and (min-width: 480px) {
+  .container-footer {
+    text-align: center;
+  }
 }
 
-.form-field-footer input {
-  padding-left: 16px;
-  width: 358px;
-  height: 50px;
-  margin-right: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
+@media (min-width: 768px) {
+  .container-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 
-.networks {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.footer-box {
+  text-align: center;
 }
 
-.address {
+.address-physical {
   margin-top: 0;
   margin-bottom: 9px;
   font-family: Roboto, sans-serif;
@@ -666,5 +655,66 @@ address .link {
 
 .mail-link {
   margin-bottom: 9px;
+}
+
+.networks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 60px;
+}
+
+.text-footer {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.logo-footer {
+  margin-bottom: 20px;
+}
+
+.address {
+  margin-bottom: 60px;
+}
+
+.form-field-footer input {
+  margin-bottom: 20px;
+  padding-left: 16px;
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.footer-form {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .footer-contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 /*# sourceMappingURL=portfolio.css.map */

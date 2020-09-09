@@ -52,7 +52,7 @@
 }
 
 .advantages-list-item {
-	max-width: 100%;
+	max-width: 450px;
 	margin-right: 0;
 
 	@include for-size(tablet-landscape) {
@@ -82,6 +82,7 @@
 		background-color: $secondary-background-color;
 	}
 }
+
 .antenna::before {
 	background-image: url(/images/antenna.svg);
 }
