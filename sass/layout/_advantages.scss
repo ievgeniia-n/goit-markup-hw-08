@@ -1,7 +1,6 @@
 .advantages {
 	/* padding-top: 94px; */
 	padding-top: 60px;
-	padding-bottom: 0;
 
 	@include for-size(desktop) {
 		padding-top: 94px;
@@ -53,7 +52,7 @@
 }
 
 .advantages-list-item {
-	max-width: 450px;
+	max-width: 100%;
 	margin-right: 0;
 
 	@include for-size(tablet-landscape) {
@@ -66,26 +65,23 @@
 	}
 
 	&:not(:last-child) {
-		margin-right: 30px;
+		@media screen and (max-width: 767px) {
+			margin-bottom: 30px;
+		}
+	}
+
+	&:before {
+		margin-bottom: 30px;
+		display: block;
+		content: "";
+		height: 120px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: 100px 25px;
+		border-radius: 4px;
+		background-color: $secondary-background-color;
 	}
 }
-
-/* 	&:not(:last-child) {
-		margin-right: 30px;
-	} */
-
-&:before {
-	margin-bottom: 30px;
-	display: block;
-	content: "";
-	height: 120px;
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: 100px 25px;
-	border-radius: 4px;
-	background-color: $secondary-background-color;
-}
-
 .antenna::before {
 	background-image: url(/images/antenna.svg);
 }
