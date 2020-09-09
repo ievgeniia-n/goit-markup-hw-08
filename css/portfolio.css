@@ -625,7 +625,7 @@ ul {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .container-footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -635,9 +635,6 @@ ul {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
   }
 }
 
@@ -735,6 +732,19 @@ address .link {
     padding-top: 60px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-form {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-contacts {
+    text-align: center;
   }
 }
 /*# sourceMappingURL=portfolio.css.map */

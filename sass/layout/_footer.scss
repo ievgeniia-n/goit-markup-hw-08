@@ -24,11 +24,10 @@
 		text-align: center;
 	}
 
-	@include for-size(tablet-landscape) {
+	@include for-size(desktop) {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-		align-items: baseline;
 	}
 }
 
@@ -114,5 +113,16 @@ address .link {
 		padding-top: 60px;
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	@include for-size(desktop) {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+}
+
+.footer-contacts {
+	@media screen and (max-width: 767px) {
+		text-align: center;
 	}
 }
