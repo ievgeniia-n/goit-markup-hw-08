@@ -1,0 +1,51 @@
+.network-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.network-icon {
+	fill: $white;
+
+	&-member {
+		fill: $border-color;
+	}
+}
+
+.network-item-link {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 50%;
+	background-size: content;
+	transition-duration: 250ms;
+	transition-timing-function: $timing-function;
+
+	&:hover,
+	&:focus {
+		background-color: $accent-color;
+		transition-duration: 250ms;
+		transition-timing-function: $timing-function;
+
+		.network-icon-member {
+			transition-duration: 250ms;
+			transition-timing-function: $timing-function;
+			color: $accent-color;
+			fill: $white;
+		}
+
+		.network-icon-member {
+			transition-duration: 250ms;
+			transition-timing-function: $timing-function;
+			color: $accent-color;
+			fill: $white;
+		}
+	}
+}
+
+.network-item:not(:last-child) {
+	margin-right: 10px;
+}
