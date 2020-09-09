@@ -756,7 +756,7 @@ ul {
   color: #212121;
 }
 
-@media (min-width: 480px) {
+@media screen and (max-width: 768px) {
   .advantages .title {
     text-align: center;
   }
@@ -785,6 +785,7 @@ ul {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
@@ -799,7 +800,7 @@ ul {
 }
 
 .advantages-list-item {
-  width: 100%;
+  max-width: 450px;
   margin-right: 0;
   /* 	&:not(:last-child) {
 		margin-right: 30px;
@@ -808,7 +809,8 @@ ul {
 
 @media (min-width: 768px) {
   .advantages-list-item {
-    max-width: 50%;
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
   }
 }
 
@@ -816,6 +818,15 @@ ul {
   .advantages-list-item {
     max-width: 270px;
   }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 767px) {
+  .advantages-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
   .advantages-list-item:not(:last-child) {
     margin-right: 30px;
   }

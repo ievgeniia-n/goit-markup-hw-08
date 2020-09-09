@@ -6,6 +6,7 @@
 	@include for-size(desktop) {
 		padding-top: 94px;
 	}
+
 	.title {
 		margin-top: 0;
 		margin-bottom: 10px;
@@ -18,7 +19,7 @@
 		text-transform: uppercase;
 		color: $title-text-color;
 
-		@include for-size(tablet-portrait) {
+		@media screen and (max-width: 768px) {
 			text-align: center;
 		}
 	}
@@ -37,6 +38,7 @@
 	@include for-size(tablet-landscape) {
 		display: flex;
 		flex-wrap: wrap;
+		margin: -15px;
 	}
 
 	& p {
@@ -51,36 +53,37 @@
 }
 
 .advantages-list-item {
-	width: 100%;
+	max-width: 450px;
 	margin-right: 0;
 
 	@include for-size(tablet-landscape) {
-		max-width: 50%;
+		width: calc((100% - 4 * 15px) / 2);
+		margin: 15px;
 	}
 
 	@include for-size(desktop) {
 		max-width: 270px;
-
-		&:not(:last-child) {
-			margin-right: 30px;
-		}
 	}
 
-	/* 	&:not(:last-child) {
+	&:not(:last-child) {
+		margin-right: 30px;
+	}
+}
+
+/* 	&:not(:last-child) {
 		margin-right: 30px;
 	} */
 
-	&:before {
-		margin-bottom: 30px;
-		display: block;
-		content: "";
-		height: 120px;
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-position: 100px 25px;
-		border-radius: 4px;
-		background-color: $secondary-background-color;
-	}
+&:before {
+	margin-bottom: 30px;
+	display: block;
+	content: "";
+	height: 120px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 100px 25px;
+	border-radius: 4px;
+	background-color: $secondary-background-color;
 }
 
 .antenna::before {
