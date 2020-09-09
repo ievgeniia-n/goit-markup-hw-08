@@ -14,8 +14,13 @@
 		font-size: 14px;
 		line-height: 1.14;
 		letter-spacing: 0.03em;
+		text-align: left;
 		text-transform: uppercase;
 		color: $title-text-color;
+
+		@include for-size(tablet-portrait) {
+			text-align: center;
+		}
 	}
 }
 .advantages-list {
@@ -33,6 +38,7 @@
 		display: flex;
 		flex-wrap: wrap;
 	}
+
 	& p {
 		margin-top: 0;
 		margin-bottom: 0;
@@ -45,8 +51,12 @@
 }
 
 .advantages-list-item {
-	max-width: 450px;
+	width: 100%;
 	margin-right: 0;
+
+	@include for-size(tablet-landscape) {
+		max-width: 50%;
+	}
 
 	@include for-size(desktop) {
 		max-width: 270px;

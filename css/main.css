@@ -751,8 +751,15 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-align: left;
   text-transform: uppercase;
   color: #212121;
+}
+
+@media (min-width: 480px) {
+  .advantages .title {
+    text-align: center;
+  }
 }
 
 .advantages-list {
@@ -792,11 +799,17 @@ ul {
 }
 
 .advantages-list-item {
-  max-width: 450px;
+  width: 100%;
   margin-right: 0;
   /* 	&:not(:last-child) {
 		margin-right: 30px;
 	} */
+}
+
+@media (min-width: 768px) {
+  .advantages-list-item {
+    max-width: 50%;
+  }
 }
 
 @media (min-width: 1200px) {
