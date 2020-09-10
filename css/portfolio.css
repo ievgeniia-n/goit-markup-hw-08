@@ -251,22 +251,12 @@ ul {
   fill: #ffffff;
 }
 
-.button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 34px;
-}
-
 .button .item:not(:last-child) {
   margin-right: 8px;
 }
 
 .button .link {
-  display: inline-block;
+  /* 	display: inline-block; */
   border-radius: 4px;
   padding: 6px 22px;
   min-width: 73px;
@@ -287,6 +277,12 @@ ul {
   cursor: pointer;
 }
 
+@media screen and (max-width: 767px) {
+  .button .link {
+    margin-bottom: 15px;
+  }
+}
+
 .button .link:hover,
 .button .link:focus {
   background-color: #2196f3;
@@ -296,6 +292,46 @@ ul {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+  .button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 34px;
+  }
+}
+
+@media (min-width: 768px) {
+  .button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 34px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .button {
+    margin-right: 8px;
+    margin-bottom: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+  }
 }
 
 .button-close {
@@ -503,8 +539,7 @@ ul {
 }
 
 .portfolio {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .portfolio-title {
@@ -561,7 +596,7 @@ ul {
 .examples .example-item {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  display: inline-block;
+  /* 	display: inline-block; */
   margin-right: 30px;
   margin-bottom: 30px;
   width: 370px;

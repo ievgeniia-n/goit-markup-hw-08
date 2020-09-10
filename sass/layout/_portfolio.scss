@@ -10,7 +10,7 @@
 }
 
 .portfolio {
-	flex-wrap: wrap;
+	/* flex-wrap: wrap; */
 
 	&-title {
 		margin-top: 0;
@@ -63,7 +63,7 @@
 
 .examples .example-item {
 	box-sizing: border-box;
-	display: inline-block;
+	/* 	display: inline-block; */
 	margin-right: 30px;
 	margin-bottom: 30px;
 	width: 370px;

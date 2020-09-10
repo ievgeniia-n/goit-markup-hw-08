@@ -35,15 +35,11 @@
 }
 
 .button {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 34px;
-
 	.item:not(:last-child) {
 		margin-right: 8px;
 	}
 	.link {
-		display: inline-block;
+		/* 	display: inline-block; */
 		border-radius: 4px;
 		padding: 6px 22px;
 		min-width: 73px;
@@ -60,6 +56,10 @@
 		transition-duration: 250ms;
 		transition-timing-function: $timing-function;
 		cursor: pointer;
+
+		@media screen and (max-width: 767px) {
+			margin-bottom: 15px;
+		}
 	}
 	.link:hover,
 	.link:focus {
@@ -68,6 +68,28 @@
 		transition-duration: 250ms;
 		transition-timing-function: $timing-function;
 		cursor: pointer;
+	}
+
+	@include for-size(desktop) {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 34px;
+	}
+
+	@include for-size(tablet-landscape) {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 34px;
+	}
+
+	@media screen and(max-width: 767px) {
+		margin-right: 8px;
+		margin-bottom: 40px;
+		display: flex;
+		align-content: flex-start;
+		flex-wrap: wrap;
+		width: 100%;
+		height: auto;
 	}
 }
 
