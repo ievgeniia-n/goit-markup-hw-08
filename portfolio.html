@@ -20,6 +20,7 @@
 					<span class="logo-web">Web</span>
 					Studio
 				</a>
+				
 				<nav>
 					<button type="button" 
 					class="menu-button" 
@@ -31,8 +32,10 @@
 							<use class="icon-cross" a href="./images/sprite.svg#close-menu"></use>
 						</svg>
 					</button>
-					<div class="menu-container" data-menu id="menu">Контент</div>
-						
+					
+					
+					<div class="menu-container" data-menu id="menu">
+					
 					<ul class="site-nav">
 						<li class="item"><a href="#" class="link">Студия</a></li>
 						<li class="item">
@@ -42,21 +45,28 @@
 						</li>
 						<li class="item"><a href="#" class="link">Контакты</a></li>
 					</ul>
+
+					<ul class="auth-nav">
+						<li class="item">
+							<svg class="contact-item" width="16" height="12">
+								<use href="./images/sprite.svg#icon-mail"></use>
+							</svg>
+							<a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+						</li>
+						<li class="item">
+							<svg class="contact-item" width="10" height="16">
+								<use href="./images/sprite.svg#icon-phone"></use>
+							</svg>
+							<a href="Tel:+380961111111" class="link">+38 096 111 1111</a>
+						</li>
+					</ul>
+
 				</nav>
-				<ul class="auth-nav">
-					<li class="item">
-						<svg class="contact-item" width="16" height="12">
-							<use href="./images/sprite.svg#icon-mail"></use>
-						</svg>
-						<a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
-					</li>
-					<li class="item">
-						<svg class="contact-item" width="10" height="16">
-							<use href="./images/sprite.svg#icon-phone"></use>
-						</svg>
-						<a href="Tel:+380961111111" class="link">+38 096 111 1111</a>
-					</li>
-				</ul>
+
+				
+
+			</div>
+			
 			</div>
 		</header>
 		<main>
@@ -187,17 +197,19 @@
 
 				<div class="footer-form">
 					<p class="text-footer">Подпишитесь на рассылку</p>
+					
 					<div class="form-field-footer">
 						<label>
 							<input type="email" name="mail" placeholder="E-mail" />
+							<button class="order-link">
+								Подписаться
+								<svg class="icon-send">
+									<use href="./images/sprite.svg#icon-send"></use>
+								</svg>
+							</button>
 						</label>
 
-						<button class="order-link">
-							Подписаться
-							<svg class="icon-send">
-								<use href="./images/sprite.svg#icon-send"></use>
-							</svg>
-						</button>
+						
 					</div>
 				</div>
 			</div>

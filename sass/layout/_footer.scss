@@ -25,9 +25,7 @@
 	}
 
 	@include for-size(desktop) {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
+		justify-content: space-around;
 	}
 }
 
@@ -100,10 +98,26 @@ address .link {
 .form-field-footer input {
 	margin-bottom: 20px;
 	padding-left: 16px;
-	width: 100%;
 	height: 50px;
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	border-radius: 4px;
+
+	@media screen and (max-width:1199px){
+		width: 100%;
+	}
+	@include for-size(desktop) {
+		margin-bottom: 0;
+		margin-right: 12px;
+		width: 358px;
+
+	}
+}
+
+.form-footer label {
+	@include for-size(desktop) {
+		
+	/* 	width: 370px; */
+	}
 }
 
 .footer-form {
@@ -118,6 +132,7 @@ address .link {
 	@include for-size(desktop) {
 		margin-left: 0px;
 		margin-right: 0px;
+		padding-top: 0;
 	}
 }
 

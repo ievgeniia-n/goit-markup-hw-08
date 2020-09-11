@@ -70,12 +70,11 @@
 	max-width: 370px;
 	border: 1px solid #eeeeee;
 
-	&:not(:last-child) {
-		@include for-size(tablet-portrait) {
-			margin-bottom: 30px;
-			margin-right: auto;
-			margin-left: auto;
-		}
+
+	@media screen and (max-width:767px) {
+		margin-bottom: 30px;
+		margin-right: auto;
+		margin-left: auto;
 	}
 
 	@include for-size(tablet-landscape) {
