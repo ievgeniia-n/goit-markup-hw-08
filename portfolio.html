@@ -14,13 +14,25 @@
 	<body>
 		<!--Навигация-->
 
-		<!-- <header class="page-header">
+		<header class="page-header">
 			<div class="container main-nav">
 				<a href="index.html" class="logo">
 					<span class="logo-web">Web</span>
 					Studio
 				</a>
 				<nav>
+					<button type="button" 
+					class="menu-button" 
+					aria-expanded="false" 
+					data-menu-button
+					aria-controls="menu">
+						<svg width="40" height="40" aria-label="Переключатель мобильного меню">
+							<use class="icon-menu" a href="./images/sprite.svg#icon-menu"></use>
+							<use class="icon-cross" a href="./images/sprite.svg#close-menu"></use>
+						</svg>
+					</button>
+					<div class="menu-container" data-menu id="menu">Контент</div>
+						
 					<ul class="site-nav">
 						<li class="item"><a href="#" class="link">Студия</a></li>
 						<li class="item">
@@ -46,7 +58,7 @@
 					</li>
 				</ul>
 			</div>
-		</header> -->
+		</header>
 		<main>
 			<!--Наши работы-->
 			<section class="section">
@@ -191,5 +203,6 @@
 			</div>
 		</footer>
 		<script src="./js/modal.js"></script>
+		<script src="./JS/menu.js"></script>
 	</body>
 </html>
