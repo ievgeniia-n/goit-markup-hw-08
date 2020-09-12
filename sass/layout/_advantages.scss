@@ -1,6 +1,7 @@
 .advantages {
 	/* padding-top: 94px; */
 	padding-top: 60px;
+	padding-bottom: 94px;
 
 	@include for-size(desktop) {
 		padding-top: 94px;
@@ -69,7 +70,7 @@
 			margin-bottom: 30px;
 		}
 	}
-
+	/* 
 	&:before {
 		margin-bottom: 30px;
 		display: block;
@@ -80,21 +81,5 @@
 		background-position: 100px 25px;
 		border-radius: 4px;
 		background-color: $secondary-background-color;
-	}
-}
-
-.antenna::before {
-	background-image: url(/images/antenna.svg);
-}
-
-.clock::before {
-	background-image: url(/images/clock.svg);
-}
-
-.diagram::before {
-	background-image: url(/images/diagram.svg);
-}
-
-.astronaut::before {
-	background-image: url(/images/astronaut.svg);
+	} */
 }

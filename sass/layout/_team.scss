@@ -42,60 +42,32 @@
 			font-size: 36px;
 			line-height: 1.16;
 		}
-
-		&-description {
-			text-align: center;
-			margin-top: 0;
-			margin-bottom: 16px;
-			font-size: 16px;
-			line-height: 1.19;
-			text-align: center;
-			letter-spacing: 0.03em;
-			color: $primary-text-color;
-		}
 	}
 }
 
+.member-description {
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 16px;
+	font-size: 16px;
+	line-height: 1.19;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: $primary-text-color;
+}
 .team-item {
-	max-width: 100%;
+	/* 	max-width: 100%; */
 	/* 	padding-bottom: 30px; */
 	background-color: $white;
 	border-radius: 0px 0px 4px 4px;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
-	
-
-	&:not(:last-child) {
-		@media screen and (max-width: 767px) {
-			margin-bottom: 30px;
-		}
+	@include for-size(tablet-landscape) {
+		width: calc((100% - 4 * 15px) / 2);
+		margin: 15px;
 	}
-	
+	@include for-size(desktop) {
+		width: calc((100% - 8 * 15px) / 4);
+		margin: 15px;
+	}
 }
-
-.designer::before {
-	background-image: url(/images/product-designer.jpg);
-}
-
-.developer::before {
-	background-image: url(/images/frontend-developer.jpg);
-}
-
-.marketing::before {
-	background-image: url(/images/marketing.jpg);
-}
-
-.uidesigner::before {
-	background-image: url(/images/ui-designer.jpg);
-}
-
-@include for-size(tablet-landscape) {
-	width: calc((100% - 4 * 15px) / 2);
-	margin: 15px;
-}
-
-@include for-size(desktop) {
-	width: calc((100% - 8 * 15px) / 4);
-	margin: 15px;
-}
-

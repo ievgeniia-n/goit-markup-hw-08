@@ -5,26 +5,39 @@
 
 .container-main {
 	max-width: 1600px;
-	height: 600px;
+	height: auto;
 	margin-left: auto;
 	margin-right: auto;
-	background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(/images/Header.jpg);
+	background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(/images/header.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: cover;
 	background-color: $grey;
+
+	@media screen and (max-width: 1199px) {
+		padding-top: 118px;
+		padding-bottom: 118px;
+		
+	}
+
+	@include for-size(desktop) {
+		padding-top: 200px;
+		padding-bottom: 200px;
+	}
 }
+
+
 
 .page {
 	text-align: center;
 
 	&-title {
-		padding-top: 200px;
+		
 		margin-top: 0px;
 		margin-bottom: 30px;
 		margin-left: auto;
 		margin-right: auto;
-		width: 696px;
+		max-width: 696px;
 		font-family: Roboto, sans-serif;
 		font-weight: 900;
 		font-size: 44px;
@@ -32,5 +45,12 @@
 		letter-spacing: 0.06em;
 		text-transform: uppercase;
 		color: $white;
+
+		@media screen and (max-width: 767px) {
+			padding-top: 0;
+			font-size: 26px;
+			line-height: 1.61;
+			width: 360px;
+		}
 	}
 }
