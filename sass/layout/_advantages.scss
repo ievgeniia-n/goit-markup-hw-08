@@ -70,9 +70,27 @@
 			margin-bottom: 30px;
 		}
 	}
-	/* 
-	&:before {
-		margin-bottom: 30px;
+
+	.img-advantages {
+		@include for-size(tablet-portrait) {
+			width: 450px;
+			height: 120px;
+			padding: 25px 190px;
+		}
+
+		@include for-size(tablet-landscape) {
+			width: 354px;
+			height: 120px;
+			padding: 25px 142px;
+		}
+		@include for-size(desktop) {
+			width: 270px;
+			height: 120px;
+			padding: 25px 100px;
+		}
+	}
+	/* 	&:before {
+		position: absolute;margin-bottom: 30px;
 		display: block;
 		content: "";
 		height: 120px;
@@ -83,3 +101,19 @@
 		background-color: $secondary-background-color;
 	} */
 }
+
+/* .antenna::before {
+	background-image: url(/images/antenna.svg);
+}
+
+.clock::before {
+	background-image: url(/images/clock.svg);
+}
+
+.diagram::before {
+	background-image: url(/images/diagram.svg);
+}
+
+.astronaut::before {
+	background-image: url(/images/astronaut.svg);
+} */
