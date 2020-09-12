@@ -83,7 +83,43 @@
 					<ul class="examples">
 						<li class="example-item img1">
 							<div class="portfolio-card">
-								<img class="portfolio-img" src="./images/img1.jpg" alt="Пример Веб-сайта" />
+								<picture>
+									<source 
+									srcset="./images/portfolio/technocrack/mobile/technocrack.webp 1x, 
+									./images/portfolio/technocrack/mobile/technocrack@2x.webp 2x"
+									type="image/webp"
+									media="(max-width: 767px)" />
+
+									<source 
+									srcset="./images/portfolio/technocrack/tablet/technocrack.webp 1x, 
+									./images/portfolio/technocrack/tablet/technocrack@2x.webp 2x"
+									type="image/webp"
+									media="(max-width: 1199px)" />
+
+									<source 
+									srcset="./images/portfolio/technocrack/laptop/technocrack.webp 1x, 
+									./images/portfolio/technocrack/laptop/technocrack@2x.webp 2x"
+									type="image/webp"
+									media="(min-width: 1200px)" /> 
+
+                                    <source srcset="./images/portfolio/technocrack/mobile/technocrack.jpg 1x, 
+									./images/portfolio/technocrack/mobile/technocrack@2x.jpg 2x" 
+									media="(max-width: 767px)" />
+
+                                    <source srcset="./images/portfolio/technocrack/tablet/technocrack.jpg 1x, 
+									./images/portfolio/technocrack/tablet/technocrack@2x.jpg 2x" 
+									media="(max-width: 1199px)" />
+
+                                    <source srcset="./images/portfolio/technocrack/laptop/technocrack.jpg 1x, 
+									./images/portfolio/technocrack/laptop/technocrack@2x.jpg 2x" 
+									media="(min-width: 1200px)" />
+
+									<img src="./images/portfolio/technocrack/portfolio/technocrack.jpg" 
+									alt="Пример Веб-сайта"
+									aria-label="Картинка проекта 1"
+									width="450">
+								</picture>
+				
 
 								<div class="portfolio-overlay">
 									<p class="portfolio-text">
@@ -97,42 +133,337 @@
 							<p class="section-description">Веб-сайт</p>
 						</li>
 						<li class="example-item img2">
-							<img class="portfolio-img" src="./images/img2.jpg" alt="Постер с баскетболистами" />
+							<picture>
+								<source srcset="./images/portfolio/poster/mobile/poster.webp 1x, 
+								./images/portfolio/poster/mobile/poster@2x.webp 2x" 
+								type="image/webp" 
+								media="(max-width: 767px)" />
+							
+								<source srcset="./images/portfolio/poster/tablet/poster.webp 1x, 
+								./images/portfolio/poster/tablet/poster@2x.webp 2x" 
+								type="image/webp" 
+								media="(max-width: 1199px)" />
+							
+								<source srcset="./images/portfolio/poster/laptop/poster.webp 1x, 
+								./images/portfolio/poster/laptop/poster@2x.webp 2x" 
+								type="image/webp" 
+								media="(min-width: 1200px)" />
+							
+								<source 
+								srcset="./images/portfolio/poster/mobile/poster.jpg 1x, 
+								./images/portfolio/poster/mobile/poster@2x.jpg 2x" 
+								media="(max-width: 767px)" />
+		
+								<source 
+								srcset="./images/portfolio/poster/tablet/poster.jpg 1x, 
+								./images/portfolio/poster/tablet/poster@2x.jpg 2x" 
+								media="(max-width: 1199px)" />
+		
+							   <source 
+							   srcset="./images/portfolio/poster/laptop/poster.jpg 1x, 
+								./images/portfolio/poster/laptop/poster@2x.jpg 2x" 
+								media="(min-width: 1200px)" />
+
+								<img src="./images/portfolio/poster.jpg" 
+								alt="Постер с баскетболистами" 
+								aria-label="Картинка проекта 2"
+								width="450">
+							</picture>
 							<h2 class="portfolio-title">Постер New Orlean vs Golden Star</h2>
 							<p class="section-description">Дизайн</p>
 						</li>
 						<li class="example-item img3">
-							<img class="portfolio-img" src="./images/img3.jpg" alt="Реклама ресторана" />
+								<picture>
+									<source 
+									srcset="./images/portfolio/restaurant/mobile/restaurant.webp 1x, 
+									./images/portfolio/restaurant/mobile/restaurant.@2x.webp 2x" 
+									type="image/webp" 
+									media="(max-width: 767px)" />
+								
+									<source 
+									srcset="./images/portfolio/restaurant/tablet/restaurant.webp 1x, 
+									./images/portfolio/restaurant/tablet/restaurant@2x.webp 2x" 
+									type="image/webp" 
+									media="(max-width: 1199px)" />
+								
+									<source 
+									srcset="./images/portfolio/restaurant/laptop/restaurant.webp 1x, 
+									./images/portfolio/restaurant/laptop/restaurant@2x.webp 2x" 
+									type="image/webp" 
+									media="(min-width: 1200px)" />
+								
+									<source 
+									srcset="./images/portfolio/restaurant/mobile/restaurant.jpg 1x, 
+									./images/portfolio/restaurant/mobile/restaurant.@2x.jpg 2x" 
+									media="(max-width: 767px)" />
+									
+									<source 
+									srcset="./images/portfolio/restaurant/tablet/restaurant.jpg 1x, 
+									./images/portfolio/restaurant/tablet/restaurant@2x.jpg 2x" 
+									media="(max-width: 1199px)" />
+									
+									<source 
+									srcset="./images/portfolio/restaurant/laptop/restaurant.jpg 1x, 
+									./images/portfolio/restaurant/laptop/restaurant@2x.jpg 2x" 
+									media="(min-width: 1200px)" />
+								
+									<img src="./images/portfolio/restaurant.jpg" 
+									alt="Реклама ресторана" 
+									aria-label="Картинка проекта 3" 
+									width="450">
+								</picture>
+
 							<h2 class="portfolio-title">Ресторан Seafood</h2>
 							<p class="section-description">Приложение</p>
 						</li>
 						<li class="example-item img4">
-							<img class="portfolio-img" src="./images/img4.jpg" alt="Фото наушников" />
+							<picture>
+							<source srcset="./images/portfolio/projectprime/mobile/projectprime.webp 1x, 
+							./images/portfolio/projectprime/mobile/projectprime@2x.webp 2x" 
+							type="image/webp" 
+							media="(max-width: 767px)" />
+
+							<source srcset="./images/portfolio/projectprime/tablet/projectprime.webp 1x, 
+							./images/portfolio/projectprime/tablet/projectprime@2x.webp 2x" 
+							type="image/webp" 
+							media="(max-width: 1199px)" />
+
+							<source srcset="./images/portfolio/projectprime/laptop/projectprime.webp 1x, 
+							./images/portfolio/projectprime/laptop/projectprime@2x.webp 2x" 
+							type="image/webp" 
+							media="(min-width: 1200px)" />
+
+							<source 
+							srcset="./images/portfolio/projectprime/mobile/projectprime.jpg 1x, 
+							./images/portfolio/projectprime/mobile/projectprime@2x.jpg 2x" 
+							media="(max-width: 767px)" />
+							
+							<source 
+							srcset="./images/portfolio/projectprime/tablet/projectprime.jpg 1x, 
+							./images/portfolio/projectprime/tablet/projectprime@2x.jpg 2x" 
+							media="(max-width: 1199px)" />
+							
+							<source 
+							srcset="./images/portfolio/projectprime/laptop/projectprime.jpg 1x, 
+							./images/portfolio/projectprime/laptop/projectprime@2x.jpg2x" 
+							media="(min-width: 1200px)" />
+													
+							<img src="./images/portfolio/projectprime.jpg" 
+							alt="Фото наушников" 
+							aria-label="Картинка проекта 4" 
+							width="450">
+							</picture>
+
 							<h2 class="portfolio-title">Проект Prime</h2>
 							<p class="section-description">Маркетинг</p>
 						</li>
 						<li class="example-item img5">
-							<img class="portfolio-img" src="./images/img5.jpg" alt="Коробки" />
+						<picture>
+						<source 
+						srcset="./images/portfolio/projectboxes/mobile/projectboxes.webp 1x, 
+						./images/portfolio/projectboxes/mobile/projectboxes@2x.webp 2x" 
+						type="image/webp" 
+						media="(max-width: 767px)" />
+						
+						<source 
+						srcset="./images/portfolio/projectboxes/tablet/projectboxes.webp 1x, 
+						./images/portfolio/projectboxes/tablet/projectboxes@2x.webp 2x" 
+						type="image/webp" 
+						media="(max-width: 1199px)" />
+						
+						<source 
+						srcset="./images/portfolio/projectboxes/laptop/projectboxes.webp 1x, 
+						./images/portfolio/projectboxes/laptop/projectboxes@2x.webp 2x" 
+						type="image/webp" 
+						media="(min-width: 1200px)" />
+						
+						<source 
+						srcset="./images/portfolio/projectboxes/mobile/projectboxes.jpg 1x, 
+						./images/portfolio/projectboxes/mobile/projectboxes@2x.jpg 2x" 
+						media="(max-width: 767px)" />
+						
+						<source 
+						srcset="./images/portfolio/projectboxes/tablet/projectboxes.jpg 1x, 
+						./images/portfolio/projectboxes/tablet/projectboxes@2x.jpg 2x" 
+						media="(max-width: 1199px)" />
+						
+						<source 
+						srcset="./images/portfolio/projectboxes/laptop/projectboxes.jpg 1x, 
+						./images/portfolio/projectboxes/laptop/projectboxes@2x.jpg 2x" 
+						media="(min-width: 1200px)" />
+
+						<img src="./images/portfolio/projectboxes.jpg" 
+						alt="Коробки" 
+						aria-label="Картинка проекта 5" 
+						width="450">
+						</picture>
 							<h2 class="portfolio-title">Проект Boxes</h2>
 							<p class="section-description">Приложение</p>
 						</li>
 						<li class="example-item img6">
-							<img class="portfolio-img" src="./images/img6.jpg" alt="Монитор" />
+						<picture>
+						<source 
+						srcset="./images/portfolio/inspirationhasnoborders/mobile/inspirationhasnoborders.webp 1x, 
+						./images/portfolio/inspirationhasnoborders/mobile/inspirationhasnoborders@2x.webp 2x" 
+						type="image/webp" 
+						media="(max-width: 767px)" />
+								
+						<source 
+						srcset="./images/portfolio/inspirationhasnoborders/tablet/inspirationhasnoborders.webp 1x, 
+						./images/portfolio/inspirationhasnoborders/tablet/inspirationhasnoborders@2x.webp 2x" 
+						type="image/webp" 
+						media="(max-width: 1199px)" />
+								
+						<source 
+						srcset="./images/portfolio/inspirationhasnoborders/laptop/inspirationhasnoborders.webp 1x, 
+						./images/portfolio/inspirationhasnoborders/laptop/inspirationhasnoborders@2x.webp 2x" 
+						type="image/webp" 
+						media="(min-width: 1200px)" />
+
+						<source 
+						srcset="./images/portfolio/inspirationhasnoborders/mobile/inspirationhasnoborders.jpg 1x, 
+						./images/portfolio/inspirationhasnoborders/mobile/inspirationhasnoborders@2x.jpg 2x" 
+						media="(max-width: 767px)" />
+						
+						<source 
+						srcset="./images/portfolio/inspirationhasnoborders/tablet/inspirationhasnoborders.jpg 1x, 
+						./images/portfolio/inspirationhasnoborders/tablet/inspirationhasnoborders@2x.jpg 2x" 
+						media="(max-width: 1199px)" />
+						
+						<source 
+						srcset="./images/portfolio/inspirationhasnoborders/laptop/inspirationhasnoborders.jpg 1x, 
+						./images/portfolio/inspirationhasnoborders/laptop/inspirationhasnoborders@2x.jpg 2x" 
+						media="(min-width: 1200px)" />
+								
+					   <img src="./images/portfolio/inspirationhasnoborders.jpg" 
+					   alt="Монитор" 
+					   aria-label="Картинка проекта 6" 
+					   width="450">
+						</picture>
 							<h2 class="portfolio-title">Inspiration has no Borders</h2>
 							<p class="section-description">Веб-сайт</p>
 						</li>
 						<li class="example-item img7">
-							<img class="portfolio-img" src="./images/img7.jpg" alt="Журнал" />
+						<picture>
+						<source srcset="./images/portfolio/limitededition/mobile/limitededition.webp 1x, 
+						./images/portfolio/limitededition/mobile/limitededition@2x.webp 2x" 
+						type="image/webp"
+						media="(max-width: 767px)" />
+								
+						<source 
+						srcset="./images/portfolio/limitededition/tablet/limitededition.webp 1x, 
+						./images/portfolio/limitededition/tablet/limitededition@2x.webp 2x" 
+						type="image/webp"
+						media="(max-width: 1199px)" />
+								
+						<source 
+						srcset="./images/portfolio/limitededition/laptop/limitededition.webp 1x, 
+						./images/portfolio/limitededition/laptop/limitededition@2x.webp 2x" 
+						type="image/webp"
+						media="(min-width: 1200px)" />
+
+						<source 
+						srcset="./images/portfolio/limitededition/mobile/limitededition.jpg 1x, 
+						./images/portfolio/limitededition/mobile/limitededition@2x.jpg 2x" 
+						media="(max-width: 767px)" />
+							
+						<source 
+						srcset="./images/portfolio/limitededition/tablet/limitededition.jpg 1x, 
+						./images/portfolio/limitededition/tablet/limitededition@2x.jpg 2x" 
+						media="(max-width: 1199px)" />
+							
+						<source 
+						srcset="./images/portfolio/limitededition/laptop/limitededition.jpg 1x, 
+						./images/portfolio/limitededition/laptop/limitededition@2x.jpg 2x" 
+						media="(min-width: 1200px)" />
+								
+						<img src="./images/portfolio/limitededition.jpg" 
+						alt="Журнал" 
+						aria-label="Картинка проекта 7" 
+						width="450">
+						</picture>
 							<h2 class="portfolio-title">Издание Limited Edition</h2>
 							<p class="section-description">Дизайн</p>
 						</li>
 						<li class="example-item img8">
-							<img class="portfolio-img" src="./images/img8.jpg" alt="Лэйба" />
+					<picture>
+					<source srcset="./images/portfolio/projectlab/mobile/projectlab.webp 1x, 
+					./images/portfolio/projectlab/mobile/projectlab@2x.webp 2x" 
+					type="image/webp"
+					media="(max-width: 767px)" />
+					
+					<source 
+					srcset="./images/portfolio/projectlab/tablet/projectlab.webp 1x, 
+					./images/portfolio/projectlab/tablet/projectlab@2x.webp 2x" 
+					type="image/webp"
+					media="(max-width: 1199px)" />
+					
+					<source 
+					srcset="./images/portfolio/projectlab/laptop/projectlab.webp 1x, 
+					./images/portfolio/projectlab/laptop/projectlab@2x.webp 2x" 
+					type="image/webp"
+					media="(min-width: 1200px)" />
+					
+					<source srcset="./images/portfolio/projectlab/mobile/projectlab.jpg 1x, 
+					./images/portfolio/projectlab/mobile/projectlab@2x.jpg 2x" 
+					media="(max-width: 767px)" />
+								
+					<source 
+					srcset="./images/portfolio/projectlab/tablet/projectlab.jpg 1x, 
+					./images/portfolio/projectlab/tablet/projectlab@2x.jpg 2x" 
+					media="(max-width: 1199px)" />
+								
+					<source 
+					srcset="./images/portfolio/projectlab/laptop/projectlab.jpg 1x, 
+					./images/portfolio/projectlab/laptop/projectlab@2x.jpg 2x" 
+					media="(min-width: 1200px)" />
+
+					<img src="./images/portfolio/projectlab.jpg" 
+					alt="Лэйба" 
+					aria-label="Картинка проекта 8" 
+					width="450">
+					</picture>
 							<h2 class="portfolio-title">Проект LAB</h2>
 							<p class="section-description">Маркетинг</p>
 						</li>
 						<li class="example-item img9">
-							<img class="portfolio-img" src="./images/img9.jpg" alt="Фото ноутбука" />
+					<picture>
+					<source 
+					srcset="./images/portfolio/growingbusiness/mobile/growingbusiness.webp 1x, 
+					./images/portfolio/growingbusiness/mobile/growingbusiness@2x.webp 2x" 
+					type="image/webp" 
+					media="(max-width: 767px)" />
+					<source 
+					srcset="./images/portfolio/growingbusiness/tablet/growingbusiness.webp 1x, 
+					./images/portfolio/growingbusiness/tablet/growingbusiness@2x.webp 2x" 
+					type="image/webp" 
+					media="(max-width: 1199px)" />
+					<source 
+					srcset="./images/portfolio/growingbusiness/laptop/growingbusiness.webp 1x, 
+					./images/portfolio/growingbusiness/laptop/growingbusiness@2x.webp 2x" 
+					type="image/webp" 
+					media="(min-width: 1200px)" />
+
+					<source 
+					srcset="./images/portfolio/growingbusiness/mobile/growingbusiness.jpg 1x, 
+					./images/portfolio/growingbusiness/mobile/growingbusiness@2x.jpg 2x" 
+					media="(max-width: 767px)" />
+
+					<source 
+					srcset="./images/portfolio/growingbusiness/tablet/growingbusiness.jpg 1x, 
+					./images/portfolio/growingbusiness/tablet/growingbusiness@2x.jpg 2x" 
+					media="(max-width: 1199px)" />
+
+					<source 
+					srcset="./images/portfolio/growingbusiness/laptop/growingbusiness.jpg 1x, 
+					./images/portfolio/growingbusiness/laptop/growingbusiness@2x.jpg 2x" 
+					media="(min-width: 1200px)" />
+
+					<img src="./images/portfolio/growingbusiness.jpg" 
+					alt="Фото ноутбука" 
+					aria-label="Картинка проекта 9" 
+					width="450">
+					</picture>
 							<h2 class="portfolio-title">Growing Business</h2>
 							<p class="section-description">Приложение</p>
 						</li>
