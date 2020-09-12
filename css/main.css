@@ -149,8 +149,8 @@ img {
 
 .backdrop {
   position: fixed;
-  width: 1600px;
-  height: 1024px;
+  width: 100%;
+  height: 100%;
   top: 0;
   background: rgba(0, 0, 0, 0.2);
   -webkit-transition-duration: 250ms;
@@ -166,17 +166,24 @@ img {
 }
 
 .modal {
+  /* 	display: inline-flex; */
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
+  min-width: 450px;
+  height: 609px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .form {
@@ -236,7 +243,6 @@ img {
   margin-top: 4px;
   height: 120px;
   padding: 12px 16px;
-  margin-bottom: 20px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
@@ -340,6 +346,13 @@ img {
   color: #757575;
 }
 
+@media screen and (max-width: 1199px) {
+  .checkbox-label {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+
 .checkbox-icon {
   content: "";
   display: inline-block;
@@ -381,6 +394,20 @@ img {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   fill: #000000;
+}
+
+.btn-modal {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-bottom: 40px;
+  width: 200px;
+}
+
+.form-list {
+  margin-bottom: 20px;
 }
 
 .network-list {
