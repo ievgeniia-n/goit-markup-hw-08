@@ -122,6 +122,11 @@
 	padding: 0;
 	border: none;
 
+	&:hover,
+	&:focus {
+		fill: $accent-color;
+	}
+
 	& .icon-cross {
 		display: none;
 	}

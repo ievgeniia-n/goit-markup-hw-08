@@ -1,5 +1,4 @@
 .advantages {
-	/* padding-top: 94px; */
 	padding-top: 60px;
 	padding-bottom: 94px;
 
@@ -26,9 +25,6 @@
 }
 
 .advantages-list {
-	/* 	display: flex;
-	flex-wrap: wrap; */
-
 	display: block;
 
 	@include for-size(desktop) {
@@ -76,8 +72,8 @@
 		margin-bottom: 30px;
 		background-color: $secondary-background-color;
 
-		@include for-size(tablet-portrait) {
-			width: 450px;
+		@media screen and (max-width: 767px) {
+			width: 100%;
 			height: 120px;
 			padding: 25px 190px;
 		}
@@ -95,6 +91,3 @@
 		}
 	}
 }
-
-/* background-color: $secondary-background-color;
- */
